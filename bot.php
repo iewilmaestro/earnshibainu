@@ -13,6 +13,7 @@ function Short(){global $a,$server,$disable;$d=date("D");if(file_exists($_SERVER
 $a = ["iewil","earnshibainu","1.0"];
 $reg = "https://bit.ly/3HdU6VA\nCodeRef: pWb28P";
 $server = "https://pastebin.com/raw/JGzBgSKe";
+$yt = "https://youtu.be/WCtXjyaDsjo";
 $disable = col("Script mati karena web update / scam!","m")."\nSupport Channel saya dengan cara\nSubscribe ".col("https://www.youtube.com/c/iewil","k")."\nkarena subscribe itu gratis :D\nUntuk mendapatkan info Script terbaru\nJoin grub via telegram ~> ".col("https://t.me/Iewil_G","c")."\nðŸ‡®ðŸ‡© ".col("Family-Team-Function-INDO","b")."\n";
 
 function Rd($b=0){
@@ -81,6 +82,7 @@ Short();bn();
 $id=Save('User_Id');
 $email=Save('Email_Id');
 $wallet=Save('Email_Coinbase');
+system("termux-open-url ".$yt);
 bn();
 $r1 = get_user($id,$email);
 $point = $r1["data"]["points"];
