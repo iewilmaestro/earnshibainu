@@ -1,4 +1,13 @@
 <?php
+/*
+*
+*Creator	: iewil
+*Github		: https://github.com/iewilmaestro
+*Youtube	: https://www.youtube.com/c/iewil
+*Telegram	: @iewil57
+*Support	: Team-Function-INDO
+*
+*/
 error_reporting(0);
 $zone = json_decode(file_get_contents("http://ip-api.com/json"),1)["timezone"];if($zone){date_default_timezone_set($zone);}
 function Run($url, $httpheader = 0, $post = 0, $proxy = 0){$ch = curl_init();curl_setopt($ch, CURLOPT_URL, $url);curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 30);curl_setopt($ch, CURLOPT_COOKIE,TRUE);
